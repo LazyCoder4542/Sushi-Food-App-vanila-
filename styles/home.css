@@ -1,0 +1,115 @@
+.container {
+  position: relative;
+}
+
+.bg-img {
+  animation: fade 1000ms ease-in 2000ms 1 normal forwards;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 0%;
+  filter: brightness(80%);
+}
+
+.page-content {
+  opacity: 0;
+  animation: fade 500ms ease-in 3000ms 1 normal forwards;
+  width: 80%;
+  max-width: 900px;
+  position: relative;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  display: table;
+  text-align: center;
+}
+.page-content header h1 {
+  font-weight: normal;
+}
+.page-content header h1 span {
+  font-weight: 700;
+}
+.page-content header p {
+  opacity: 0;
+  animation-duration: 1000ms;
+  animation-timing-function: cubic-bezier(0.11, 0.75, 0.03, 1);
+  animation-delay: 3500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-name: fade, drop;
+  max-width: 85%;
+  margin: 4rem auto;
+}
+.page-content .nav-tab {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+.page-content .nav-tab span {
+  opacity: 0;
+  animation: 1000ms 5000ms 1 normal forwards;
+  animation-timing-function: linear, cubic-bezier(0.18, 0.61, 0.28, 0.88);
+}
+.page-content .nav-tab span button {
+  border-radius: 1rem;
+  padding: 1rem 3.5rem;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: black;
+}
+.page-content .nav-tab span:nth-child(1) {
+  animation-name: fade, right;
+}
+.page-content .nav-tab span:nth-child(2) {
+  animation-name: fade, left;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes drop {
+  0% {
+    transform: translate(0px, -100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes right {
+  0% {
+    transform: translateX(-50vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes left {
+  0% {
+    transform: translateX(50vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 900px) {
+  .bg-img img {
+    filter: brightness(50%);
+  }
+}
