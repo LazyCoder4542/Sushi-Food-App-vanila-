@@ -1,0 +1,47 @@
+[
+    {
+        "name": "california roll",
+        "price": 30,
+        "url": "./images/california-roll.jpg"
+    },
+    {
+        "name": "rainbow roll",
+        "price": 50,
+        "url": "./images/rainbow-roll.jpg"
+    },
+    {
+        "name": "dragon roll",
+        "price": 35,
+        "url": "./images/dragon-roll.jpg"
+    },
+    {
+        "name": "temaki",
+        "price": 19.99,
+        "url": "./images/temaki.jpg"
+    },
+    {
+        "name": "uramaki",
+        "price": 70,
+        "url": "./images/uramaki.jpg"
+    },
+    {
+        "name": "futomaki",
+        "price": 25,
+        "url": "./images/futomaki.jpg"
+    },
+    {
+        "name": "hosomaki",
+        "price": 25,
+        "url": "./images/hosomaki.jpg"
+    },
+    {
+        "name": "maki",
+        "price": 19.99,
+        "url": "./images/maki.jpg"
+    },
+    {
+        "name": "gukan maki",
+        "price": 35,
+        "url": "./images/gunkan-maki.jpg"
+    }
+]

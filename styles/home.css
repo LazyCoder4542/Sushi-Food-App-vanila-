@@ -1,3 +1,16 @@
+body {
+  color: white;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, p {
+  color: white;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
 .container {
   position: relative;
 }
@@ -5,24 +18,42 @@
 .bg-img {
   animation: fade 1000ms ease-in 2000ms 1 normal forwards;
   opacity: 0;
-  z-index: -1;
+  z-index: 0;
   position: absolute;
   top: 0;
   left: 0;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+  /*nav
+  *  position: absolute
+  *  top: 50%
+  *  width: 100%
+  *  display: flex
+  *  justify-content: space-between
+  *  a
+  *      //all: unset */
 }
-
 .bg-img img {
-  height: 100%;
-  width: 100%;
+  overflow: hidden;
+  height: 100vh !important;
+  width: 100vw !important;
   object-fit: cover;
-  object-position: 50% 0%;
+  object-position: 50% 50%;
   filter: brightness(80%);
+}
+.bg-img .light {
+  filter: brightness(50%);
+}
+.bg-img .neutral {
+  filter: brightness(70%);
+}
+.bg-img div[uk-slider] {
+  width: 100%;
 }
 
 .page-content {
+  z-index: 1;
   opacity: 0;
   animation: fade 500ms ease-in 3000ms 1 normal forwards;
   width: 80%;
@@ -39,6 +70,7 @@
 }
 .page-content header h1 span {
   font-weight: 700;
+  color: var(--clr-primary);
 }
 .page-content header p {
   opacity: 0;
@@ -66,7 +98,12 @@
   padding: 1rem 3.5rem;
   text-transform: uppercase;
   background-color: #fff;
-  color: black;
+  color: var(--clr-neutral);
+  transition-duration: 500ms;
+}
+.page-content .nav-tab span button:hover {
+  color: var(--clr-primary);
+  background-color: var(--clr-neutral);
 }
 .page-content .nav-tab span:nth-child(1) {
   animation-name: fade, right;

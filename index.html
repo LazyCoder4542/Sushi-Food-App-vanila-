@@ -9,33 +9,66 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/css/uikit.min.css" /> -->
+    <link rel="stylesheet" href="temp/UI Kit/css/uikit.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="icon" href="favicon.svg">
 </head>
 
 <body>
     <div class="container">
         <div class="bg-img">
-            <img src="images/restaurant 1.png" alt="bg">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true">
+
+                <ul class="uk-slider-items uk-child-width-1-1">
+                    <li>
+                        <img class="dark" src="images/bg-1.png" width="400" height="600" alt="">
+                    </li>
+                    <li>
+                        <img class="light" src="images/bg-2.png" width="400" height="600" alt="">
+                    </li>
+                    <li>
+                        <img class="light" src="images/bg-3.png" width="400" height="600" alt="">
+                    </li>
+                    <li>
+                        <img class="dark" src="images/bg-4.png" width="400" height="600" alt="">
+                    </li>
+                    <li>
+                        <img class="neutral" src="images/bg-5.png" width="400" height="600" alt="">
+                    </li>
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous
+                    uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next
+                    uk-slider-item="next"></a>
+
+            </div>
         </div>
         <div class="page-content">
             <main>
                 <header>
                     <h1>Welcome to <span>Sushi</span> Restaurant</h1>
-                    <p>People eat with their eyes and Sushi creates an easy way for customers to order when they can see
-                        beautiful photos of your food</p>
+                    <p>Sushi is something very exclusive. It is not like a McDonald's, not like a hot dog, not like
+                        French fry. It's very high-class cooking in Japan</p>
                 </header>
                 <nav class="nav-tab">
                     <span>
-                        <button>Menu</button>
+                        <a href="./menu.html"><button>Menu</button></a>
                     </span>
                     <span>
-                        <button>Cart</button>
+                        <a><button>Cart</button></button>
                     </span>
                 </nav>
             </main>
         </div>
     </div>
+    <script src="temp/jquery-3.6.0.min.js"></script>
+    <script src="temp/UI Kit/js/uikit.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/js/uikit-icons.min.js"></script> -->
 </body>
 
 </html>
