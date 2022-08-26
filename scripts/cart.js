@@ -6,17 +6,20 @@ $(document).ready(function () {
             this.totalSum = 0
         }
         initialize() {
+            localStorage.removeItem('cart')
             this.createDOM()
-            console.log(this.cart.length);
         }
         isCartEmpty() {
-            if (this.cart == null | this.cart.length == 0) {
-                let p = document.createElement('p')
-                p.id = 'emptycart'
-                p.innerHTML = 'Nothing to see here'
+            let p = document.createElement('p')
+            p.id = 'emptycart'
+            p.innerHTML = 'Nothing to see here. Try adding some food to your cart'
+            if (this.cart == null) {
                 $('#cart-section .wrapper').replaceWith(p)
                 return true
-
+            }
+            if (this.cart == [] | this.cart.length == 0) {
+                $('#cart-section .wrapper').replaceWith(p)
+                return true
             }
             return false
         }
@@ -31,6 +34,7 @@ $(document).ready(function () {
             $('.cart-call-to-action .cart-order #cart-total')[0].textContent = `$ ${this.totalSum}`
         }
         createDOM() {
+            console.log(this.isCartEmpty());
             if (this.isCartEmpty() == true) {
             }
             else {

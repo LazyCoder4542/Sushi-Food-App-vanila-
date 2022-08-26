@@ -67,4 +67,3 @@ class loadMenu {
         document.querySelector('.menu-container').hidden = true
     }
 }
-''.to
