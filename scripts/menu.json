@@ -2,46 +2,55 @@
     {
         "name": "california roll",
         "price": 30,
-        "url": "./images/california-roll.jpg"
+        "url": "./images/california-roll.jpg",
+        "mainIngredients": "Rice, cucumber, crab meat or imitation crab, and avocado"
     },
     {
         "name": "rainbow roll",
         "price": 50,
-        "url": "./images/rainbow-roll.jpg"
+        "url": "./images/rainbow-roll.jpg",
+        "mainIngredients": "Raw tuna, raw salmon, and imitation crab, with cucumber and avocado as the vegetables"
     },
     {
         "name": "dragon roll",
         "price": 35,
-        "url": "./images/dragon-roll.jpg"
+        "url": "./images/dragon-roll.jpg",
+        "mainIngredients": "Shrimp tempura, avocado, cucumber, rice, nori, lemon"
     },
     {
         "name": "temaki",
         "price": 19.99,
-        "url": "./images/temaki.jpg"
+        "url": "./images/temaki.jpg",
+        "mainIngredients": "Rolled cone of seaweed, wrapped around rice and fillings"
     },
     {
         "name": "uramaki",
         "price": 70,
-        "url": "./images/uramaki.jpg"
+        "url": "./images/uramaki.jpg",
+        "mainIngredients": "Short grain rice that is a little sticky, nori (seaweed sheets), rice vinegar, toasted sesame seeds, fish, meat, and vegetables"
     },
     {
         "name": "futomaki",
         "price": 25,
-        "url": "./images/futomaki.jpg"
+        "url": "./images/futomaki.jpg",
+        "mainIngredients": "Uruchimai ,rice vinegar ,nori ,kombu ,eggs ,persian cucumber ,tuna and surimi."
     },
     {
         "name": "hosomaki",
         "price": 25,
-        "url": "./images/hosomaki.jpg"
+        "url": "./images/hosomaki.jpg",
+        "mainIngredients": "Roll is filled with natto (fermented soybean), raw seafood and scallions"
     },
     {
         "name": "maki",
         "price": 19.99,
-        "url": "./images/maki.jpg"
+        "url": "./images/maki.jpg",
+        "mainIngredients": "Seaweed and vinegared rice filled with different ingredients such as fish and vegetables"
     },
     {
         "name": "gukan maki",
         "price": 35,
-        "url": "./images/gunkan-maki.jpg"
+        "url": "./images/gunkan-maki.jpg",
+        "mainIngredients": "a ball of rice, wrapped in seaweed and smoked salmon, and topped with fish roe."
     }
 ]

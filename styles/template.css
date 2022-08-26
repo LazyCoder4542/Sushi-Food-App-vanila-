@@ -1,0 +1,96 @@
+body {
+  font-size: 1rem;
+  background-color: #dee;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 4rem;
+  column-gap: 0.5rem;
+  background-color: var(--clr-neutral);
+}
+.site-header img {
+  transform-origin: left center;
+}
+.site-header h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  background-color: var(--clr-primary);
+  clip-path: polygon(0% 0%, 5% 5px, 10% 0%, 15% 5px, 20% 0%, 25% 5px, 30% 0%, 35% 5px, 40% 0%, 45% 5px, 50% 0%, 55% 5px, 60% 0%, 65% 5px, 70% 0%, 75% 5px, 80% 0%, 85% 5px, 90% 0%, 95% 5px, 100% 0%, 100% 100%, 95% calc(100% - 5px), 90% 100%, 85% calc(100% - 5px), 80% 100%, 75% calc(100% - 5px), 70% 100%, 65% calc(100% - 5px), 60% 100%, 55% calc(100% - 5px), 50% 100%, 45% calc(100% - 5px), 40% 100%, 35% calc(100% - 5px), 30% 100%, 25% calc(100% - 5px), 20% 100%, 15% calc(100% - 5px), 10% 100%, 5% calc(100% - 5px), 0% 100%);
+}
+
+.menu {
+  margin-top: 1rem;
+  color: white !important;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+}
+.menu .toggle {
+  border-radius: 50%;
+  background-color: var(--clr-neutral);
+  display: none;
+  width: 50px;
+  scale: 2;
+  border: 5px solid var(--clr-primary);
+  transform-origin: left center;
+  justify-content: center;
+  place-items: center;
+  z-index: 2;
+}
+.menu .toggle::before {
+  content: "";
+  padding-bottom: 100%;
+}
+.menu ul {
+  translate: 20px;
+  box-shadow: 10px 10px 20px rgba(12, 12, 12, 0.4);
+  background-color: var(--clr-neutral);
+  padding: 0 5rem;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  align-self: center;
+  display: flex;
+  column-gap: 1rem;
+}
+.menu ul li {
+  display: block;
+  padding: 1rem;
+  color: var(--clr-primary);
+}
+.menu ul li a {
+  all: unset;
+}
+.menu ul li a svg {
+  scale: 0.8;
+}
+.menu ul li.active {
+  color: black;
+  scale: 1.2;
+  background-color: var(--clr-primary);
+}
+.menu ul li:not(.active):hover {
+  background-color: #444;
+}
+
+.container {
+  width: 100%;
+}
+.container section {
+  margin: 4rem;
+}
+.container section header h1 {
+  margin: 1rem 0;
+  display: table;
+  border-bottom: 5px solid var(--clr-primary);
+}
+
+#site-footer {
+  padding: 0 4rem 1rem;
+}

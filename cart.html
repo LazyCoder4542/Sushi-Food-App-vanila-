@@ -12,7 +12,7 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/css/uikit.min.css" /> -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/template.css">
-    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/cart.css">
     <link rel="icon" href="favicon.svg">
 </head>
 
@@ -35,8 +35,8 @@
 
                     </a>
                 </li>
-                <li class="active" title="menu">
-                    <a href="#fsdf">
+                <li title="menu">
+                    <a href="./menu.html">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M36.4208 15.458C33.0946 18.9609 28.5969 20.0624 25.3962 18.4982L22.321 21.7367L36.7136 36.8937L33.764 40L19.3714 24.843L4.95784 39.978L2.00819 36.8717L22.4256 15.3699C20.9403 11.9993 21.9863 7.2627 25.3125 3.75985C29.329 -0.447975 35.061 -1.24107 38.1152 1.97538C41.1904 5.21386 40.4164 11.2502 36.4208 15.458ZM17.1331 16.2511L11.2128 22.4858L2.44758 13.277C-0.81586 9.81823 -0.81586 4.24452 2.44758 0.807764L17.1331 16.2511Z"
@@ -44,8 +44,8 @@
                         </svg>
                     </a>
                 </li>
-                <li title="cart">
-                    <a href="./cart.html">
+                <li class="active" title="cart">
+                    <a href="#">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M32.5879 19.94C31.9081 21.18 30.5886 22 29.0892 22H14.1947L11.9955 26H35.9866V30H11.9955C8.95667 30 7.03739 26.74 8.49684 24.06L11.1958 19.18L3.99852 4H0V0H6.53757L8.41687 4H38.0059C39.5253 4 40.485 5.64 39.7452 6.96L32.5879 19.94ZM34.6071 8H10.3161L15.0543 18H29.0891L34.6071 8ZM11.9956 32C9.79644 32 8.0171 33.8 8.0171 36C8.0171 38.2 9.79644 40 11.9956 40C14.1948 40 15.9941 38.2 15.9941 36C15.9941 33.8 14.1948 32 11.9956 32ZM28.0096 36C28.0096 33.8 29.7889 32 31.9881 32C34.1873 32 35.9866 33.8 35.9866 36C35.9866 38.2 34.1873 40 31.9881 40C29.7889 40 28.0096 38.2 28.0096 36Z"
@@ -75,22 +75,42 @@
         </div>
     </nav>
     <div class="container">
-        <section id="menu-list">
+        <section id="cart-section">
             <header>
-                <h1>MENU</h1>
+                <h1>CART</h1>
             </header>
             <div class="wrapper">
-                <div class="menu-container">
-                    <div class="wrapper1">
-                        <img src="" alt="" class="image">
-                        <div class="text"></div>
+                <div class="cart-container">
+                    <ul>
+                        <li>
+                            <div class="food-image">
+                                <img src="" alt="">
+                            </div>
+                            <div class="food-title">
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                            <div class="quantity">
+                                <span class="minus">-</span>
+                                <span class="value"></span>
+                                <span class="add">+</span>
+                            </div>
+                            <div class="delete">
+                                DEL
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cart-call-to-action">
+                    <div class="cart-order">
+                        <h2>Your Subtotal</h2>
+                        <p>Subtotal: <span id="cart-total"></span></p>
+                        <button>Confirm Order</button>
                     </div>
-                    <div class="wrapper2">
-                        <h2 class="name"></h2>
-                        <span class="price"></span>
-                    </div>
-                    <div class="add">
-                        <button class="add-item">Add to cart</button>
+                    <div class="promo-code">
+                        <h2>Promo Code</h2>
+                        <input type="text" name="promo-code" id="promo-code" placeholder="enter promo code">
+                        <button>Apply</button>
                     </div>
                 </div>
             </div>
@@ -103,7 +123,7 @@
     </footer>
     <script src="temp/jquery-3.6.0.min.js"></script>
     <script src="scripts/main.js"></script>
-    <script src="scripts/menu.js"></script>
+    <script src="scripts/cart.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.3/dist/js/uikit-icons.min.js"></script> -->
 </body>
