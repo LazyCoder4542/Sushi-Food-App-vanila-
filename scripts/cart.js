@@ -6,7 +6,6 @@ $(document).ready(function () {
             this.totalSum = 0
         }
         initialize() {
-            localStorage.removeItem('cart')
             this.createDOM()
         }
         isCartEmpty() {
@@ -30,7 +29,7 @@ $(document).ready(function () {
             else if (type == 'minus') {
                 this.totalSum -= amount
             }
-            this.totalSum = this.totalSum.toFixed(2)
+            this.totalSum = parseFloat(this.totalSum.toFixed(2))
             $('.cart-call-to-action .cart-order #cart-total')[0].textContent = `$ ${this.totalSum}`
         }
         createDOM() {
