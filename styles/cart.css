@@ -41,6 +41,14 @@
 }
 #cart-section .wrapper .cart-container ul li .quantity {
   cursor: pointer;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  user-select: none;
+}
+#cart-section .wrapper .cart-container ul li .quantity .value {
+  background-color: white;
+  padding: 0 8px;
 }
 #cart-section .wrapper .cart-container ul li .delete {
   cursor: pointer;
@@ -70,4 +78,9 @@
   border: 1px solid var(--clr-primary);
   font-family: inherit;
   padding: 0.5rem;
+}
+#cart-section #emptycart {
+  margin: auto;
+  padding: 10rem;
+  text-align: center;
 }
