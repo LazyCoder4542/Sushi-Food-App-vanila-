@@ -1,0 +1,118 @@
+body
+    color: white
+    overflow: hidden
+h1, h2, h3, h4, p
+    color: white
+h1
+    font-size: 3.8rem
+.container
+    position: relative
+.bg-img
+    animation: fade 1000ms ease-in 2000ms 1 normal forwards
+    opacity: 0
+    z-index: 0
+    position: absolute
+    top: 0
+    left: 0
+    overflow: hidden
+    width: 100vw
+    height: 100vh
+    img
+        overflow: hidden
+        height: 100vh !important
+        width: 100vw !important
+        object-fit: cover
+        object-position: 50% 50%
+        filter: brightness(80%)
+    .light
+        filter: brightness(50%)
+    .neutral
+        filter: brightness(70%)
+    div[uk-slider]
+        width: 100%
+    /*nav
+        position: absolute
+        top: 50%
+        width: 100%
+        display: flex
+        justify-content: space-between
+        a
+            //all: unset
+.page-content
+    z-index: 1
+    opacity: 0
+    animation: fade 500ms ease-in 3000ms 1 normal forwards
+    width: 80%
+    max-width: 900px
+    position: relative
+    left: 50vw
+    top: 50vh
+    transform: translate(-50%, -50%)
+    display: table
+    text-align: center
+    header
+        h1
+            font-weight: normal
+            span
+                font-weight: 700
+                color: var(--clr-primary)
+        p
+            opacity: 0
+            animation-duration: 1000ms
+            animation-timing-function: cubic-bezier(.11,.75,.03,1)
+            animation-delay: 3500ms
+            animation-iteration-count: 1
+            animation-fill-mode: forwards
+            animation-name: fade, drop
+            max-width: 85%
+            margin: 4rem auto
+    .nav-tab
+        display: flex
+        justify-content: center
+        column-gap: 2rem
+        span
+            opacity: 0
+            animation: 1000ms 5000ms 1 normal forwards
+            animation-timing-function: linear, cubic-bezier(.18,.61,.28,.88)
+            button
+                border-radius: 1rem
+                padding: 1rem 3.5rem
+                text-transform: uppercase
+                background-color: #fff
+                color: var(--clr-neutral)
+                transition-duration: 500ms
+                &:hover
+                    color: var(--clr-primary)
+                    background-color: var(--clr-neutral)
+        span:nth-child(1)
+            animation-name: fade, right
+        span:nth-child(2)
+            animation-name: fade, left
+        
+
+
+@keyframes fade
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+@keyframes drop
+    0%
+        transform: translate(0px,-100px)
+    100%
+        opacity: 1
+        transform: translate(0, 0)
+@keyframes right
+    0%
+        transform: translateX(-50vw)
+    100%
+        transform: translateX(0)
+@keyframes left
+    0%
+        transform: translateX(50vw)
+    100%
+        transform: translateX(0)
+@media screen and ( max-width: 900px )
+    .bg-img
+        img
+            filter: brightness(50%)

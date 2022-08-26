@@ -1,0 +1,69 @@
+#cart-section
+    .wrapper
+        display: grid
+        grid-template-columns: 3fr 2fr
+        column-gap: 3rem
+        --padding: 1rem
+        .cart-container, .cart-call-to-action
+            margin-bottom: auto
+        .cart-container
+            background-color: var(--clr-primary)
+            padding: var(--padding)
+            ul
+                display: flex
+                row-gap: 2rem
+                flex-direction: column
+                li
+                    list-style: none
+                    display: flex
+                    column-gap: 2rem
+                    align-items: center
+                    justify-content: space-between
+                    .food-image
+                        width: 80px
+                        height: 80px
+                        border-radius: 50%
+                        overflow: hidden
+                        img
+                            width: 100%
+                            height: 100%
+                            object-fit: cover
+                            object-position: center
+                    .food-title
+                        margin-right: auto
+                        text-transform: capitalize
+                    .quantity
+                        cursor: pointer
+                        display: flex
+                        column-gap: 10px
+                        align-items: center
+                        user-select: none
+                        .value
+                            background-color: white
+                            padding: 0 8px
+                    .delete
+                        cursor: pointer
+        .cart-call-to-action
+            border: 2px solid var(--clr-primary)
+            .cart-order, .promo-code
+                padding: var(--padding)
+                h2
+                    margin-bottom: .5rem
+                button
+                    padding: .5rem 1rem
+                    background-color: var(--clr-neutral)
+                    color: white
+                    border-radius: 10px
+            .cart-order
+                background-color: var(--clr-primary)
+                p
+                    margin: .75rem 0
+            .promo-code
+                input
+                    border: 1px solid var(--clr-primary)
+                    font-family: inherit
+                    padding: .5rem
+    #emptycart
+        margin: auto
+        padding: 10rem
+        text-align: center
